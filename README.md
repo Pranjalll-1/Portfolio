@@ -4,4 +4,4 @@
 <br>
 <br>
 <h2>Live Website</h2>
-<p>Check out the live version of my portfolio: <a>https://pranjalll-1.github.io/Portfolio/Portfolio/index.html</a> </p>
+<p>Check out the live version of my portfolio: <a href="https://pranjalll-1.github.io/Portfolio/Portfolio/index.html">HERE</a>
