@@ -1,0 +1,590 @@
+body {
+  background: radial-gradient(circle, #000000, #080028 50%, #040014 80%, #000000);
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffff;
+  /* text-shadow: 1px 1px 2px rgba(0,0,0,0.6); */
+  position: relative;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+}
+
+.nav-head {
+  font-size: 2rem;
+}
+
+.nav-options {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+
+.nav-options a {
+  margin-right: 1.5rem;
+  transition: transform ease 0.2s;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  top: -100px;
+  /* width: 100%; */
+}
+
+.dots-wrapper img {
+  width: 20%;
+}
+.main-content {
+  /* padding: 3rem; */
+  padding-top: 0;
+}
+
+.summary{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.summary-left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.summary-right {
+  display: flex;
+  max-width: 100%;
+}
+
+
+.greeting p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.about-me {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.about-me h3{
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 350;
+  line-height: 4.5rem;
+}
+
+.collab-btn {
+  display: flex;
+}
+
+#collab-btn {
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #d3d3d3;
+  color: #000000;
+  border: 3px solid white;
+  /* transition: all ease 0.2s; */
+}
+
+.star-img img{
+  transition: all ease-in-out 0.77s;
+  min-width: 420px;
+  max-width: 100%;
+  
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.socials-small {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 4rem;
+  bottom: 10px;
+}
+
+.socials-small i{
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all ease 0.25s;
+}
+
+.socials i{
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: all ease 0.25s;
+}
+
+/* services */
+
+#service-head {
+  text-align: center;
+  font-size: 8.5rem;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+}
+
+.services-wrapper {
+  /* padding: 3rem; */
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+.top-circle-container,
+.bottom-circle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.top-circle-container img{
+  width: 25%;
+}
+
+#bottom-circle {
+  width: 25%;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgb(7,7,7);
+  padding: 1rem 0 5rem 0;
+  border-radius: 100px;
+  margin-bottom: 3rem;
+}
+
+.service-card-title {
+  display: flex;
+  padding-left: 2rem;
+}
+
+#service-2-title {
+  padding-top: 3rem;
+}
+
+.service-card h1{
+  font-size: 7rem;
+}
+
+.service-card img{
+  min-width: 100%;
+  max-width: 1200px;
+}
+
+.service-card-img img {
+  width: 500px;
+}
+
+.service-card-info {
+  display: flex;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.service-card-btn{
+  display: flex;
+}
+
+.service-card-btn button {
+  padding: 1rem 10rem 1rem 10rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hr-line {
+  width: 90%;
+  border-bottom: 1px solid white;
+  box-shadow: 0 0 10px;
+}
+
+.official-wrapper {
+  display: flex;
+  background-color: rgb(199,199,199);
+  color: rgb(7,7,7);
+  margin: 3rem;
+  border-radius: 100px;
+  max-height: 700px;
+  min-height: 100%;
+  padding: 3rem;
+  margin-bottom: 200px;
+}
+
+.official-info {
+  font-size: 5rem;
+  width: 50%;
+  font-weight: 500;
+}
+
+.official-info p{
+  margin-bottom: 80px;
+}
+
+.email-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: nowrap; */
+  /* margin-left: 20%; */
+  border: 3px solid rgb(7,7,7);
+  border-radius: 100px;
+  gap: 1rem;
+  width: 50%;
+  /* padding: 1rem; */
+}
+
+
+.email-input {
+  color: rgb(7,7,7);
+  background-color: transparent;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  /* border: none; */
+  /* border-radius: 20px; */
+  border: none;
+  border-bottom: 1px solid rgb(7,7,7);
+  
+
+}
+
+#text-input {
+  height: 35%;
+  margin-top: 16px;
+}
+
+
+
+
+footer{
+  /* position: fixed; */
+  margin-top: 50px;
+  border-top: 1px solid rgb(199,199,199);
+  text-align: center;
+  font-size: 0.75rem;
+  box-shadow: 0 0 10px;
+}
+
+.notice{
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.small-nav-options i{
+  transition: all ease 0.25s;
+  cursor: pointer;
+}
+
+.email-sec-small {
+  display: none;
+}
+
+
+/* interactivity */
+
+.nav-options a:hover{
+  transform: scale(1.08);
+  /* text-decoration: underline; */
+}
+
+.socials i:hover,
+.socials-small i:hover,
+.small-nav-options i:hover{
+  transform: scale(1.15);
+}
+
+#star-img:hover{
+  transform: rotate(90deg)
+}
+
+
+
+
+/* responsiveness */
+
+@media(max-width:1230px){
+
+  .dots-wrapper{
+    display: none;
+  }
+
+  .official-info img{
+    width: 90%;
+    display: none;
+
+  }
+
+  .official-info{
+    font-size: 4.5rem;
+  }
+}
+
+@media(min-width: 975px){
+  .small-nav-options{
+    display: none;
+  }
+}
+
+@media(max-width: 975px ){
+  .nav-options {
+    display: none;
+  }
+
+  .small-nav-options {
+    font-size: 2rem;
+  }
+
+  .about-me h3 {
+   font-size: 2rem;
+   line-height: 4rem;
+  }
+
+  .star-img img{
+    max-width: 100%;
+    min-width: 350px;
+  }
+}
+
+@media(min-width:865px){
+  .socials-small {
+    display: none;
+  }
+}
+
+@media (max-width: 865px){
+  #collab-btn {
+    /* padding: 1rem; */
+    font-size: 1.5rem;
+  }
+  .socials{
+    display: none;
+  }
+  
+
+  .official-info{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+}
+
+@media(max-width: 790px){
+  .star-img{
+    display: none;
+  }
+
+  .about-me h3{
+    font-size: 3rem;
+
+  }
+
+  .service-card-title{
+    padding: 0;
+  }
+
+  .service-card h1{
+    font-size: 4rem;
+  }
+
+  .service-card-info{
+    font-size: 1.75rem;
+    padding: 0 1rem;
+  }
+
+  .service-card-img{
+    min-width: 50%;
+  }
+
+  .official-info {
+    width: 100%;
+  }
+  .email-sec{
+    display: none;
+  }
+  
+  .official-wrapper {
+    flex-direction: column;
+  }
+
+
+  .email-sec-small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .email-sec-small p{
+    margin: 0;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .email-sec-small i{
+    font-size: 1.5rem;
+  }
+}
+
+
+@media(max-width: 730px){
+  .service-card h1{
+    font-size: 3.5rem; 
+    margin-left: 20px;
+  }
+  .service-card-img img{
+    max-width: 80%;
+    min-width: 200px;
+  }
+
+  .service-card-img{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media(max-width:650px){
+  .service-card-btn button{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+
+  .official-info p{
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .service-card,
+  .official-wrapper {
+    border-radius: 70px;
+  }
+}
+
+@media(max-width:590px){
+  .services-wrapper{
+    margin: 3rem 1rem 3rem 1rem;
+  }
+
+  .official-wrapper{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .service-card{
+    padding-top: 0.5rem;
+  }
+
+  .service-card-title{
+    justify-content: center; 
+  }
+
+  .service-card-title h1{
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  #service-head {
+    margin-bottom: 100px;
+    font-size: 7rem;
+  }
+}
+
+@media(max-width: 500px){
+  .summary-left h3{
+
+    font-size: 2.5rem;
+  }
+
+  .service-card-title{
+    padding: 0.5rem;
+  }
+  .service-card-title h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .service-card-info p{
+    font-size: 1.5rem;
+  }
+
+  .service-card-btn button{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:499px){
+  .summary{
+    padding: 1.5rem;
+  }
+
+  #service-head{
+    font-size: 6rem;
+  }
+
+  #collab-btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media(max-width: 410px){
+  .socials-small{
+    margin: 0;
+  }
+
+  #service-head{
+    font-size: 5.5rem;
+    margin-bottom: 100px;
+  }
+
+  .services-wrapper{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .summary-left h3{
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  .service-card-title{
+    padding-left: 2rem;
+    
+  }
+
+  .service-card-title h1{
+    font-weight: 700;
+  }
+}
