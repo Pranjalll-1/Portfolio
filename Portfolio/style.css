@@ -24,8 +24,9 @@ body a {
 
 }
 
-.nav-head {
-  font-size: 2rem;
+.nav-head h1{
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .nav-options {
@@ -126,7 +127,7 @@ body a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-/*   margin-left: 4rem; */
+  /* margin-left: 4rem; */
   bottom: 10px;
 }
 
@@ -518,7 +519,7 @@ footer{
 
   #service-head {
     margin-bottom: 100px;
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 
@@ -545,17 +546,26 @@ footer{
 }
 
 @media(max-width:499px){
+
+  .nav-head h1{
+    font-size: 40px;
+  }
+
   .summary{
     padding: 1.5rem;
   }
 
-  #service-head{
-    font-size: 6rem;
+  #service-head h1{
+    font-size: 2rem;
   }
 
   #collab-btn{
     font-size: 1.2rem;
     font-weight: 500;
+  }
+
+  .service-card-title h1{
+    font-size: 2rem;
   }
 }
 
@@ -586,5 +596,16 @@ footer{
 
   .service-card-title h1{
     font-weight: 700;
+  }
+}
+
+@media(width<390px){
+  .service-card-title h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  .nav-head h1{
+    font-size: 30px;
   }
 }
