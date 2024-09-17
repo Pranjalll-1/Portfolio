@@ -1,4 +1,4 @@
-<h1>Pranjal's</h1>Portfolio
+<h1>Pranjal's Portfolio</h1>
 <br>
 <p>>Welcome to my personal portfolio! This repository contains the projects I’ve worked on, showcasing my skills in web development, photography and more.</p>
 <br>
