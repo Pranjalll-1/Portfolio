@@ -126,7 +126,7 @@ body a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-left: 4rem;
+/*   margin-left: 4rem; */
   bottom: 10px;
 }
 
